@@ -29,7 +29,7 @@ int main()
 						}
 						waitpid(ret5,&S5,0);
 						printf("child exit status id %d",WEXITSTATUS(S5));
-						
+
 					}
 					_exit(0);
 					for(int i =0;i<5;i++)
@@ -39,9 +39,9 @@ int main()
 					}
 					waitpid(ret4,&S4,0);
 					printf("child exit status id %d",WEXITSTATUS(S4));
-				
+
 				}
-				  _exit(0);
+				_exit(0);
 
 				for(int i =0;i<5;i++)
 				{
@@ -50,9 +50,9 @@ int main()
 				}
 				waitpid(ret3,&S3,0);
 				printf("child exit status id %d",WEXITSTATUS(S3));
-				
+
 			}
-			 _exit(0);
+			_exit(0);
 
 			for(int i =0;i<5;i++)
 			{
@@ -61,7 +61,7 @@ int main()
 			}
 			waitpid(ret2,&S2,0);
 			printf("child exit status id %d",WEXITSTATUS(S2));
-			
+
 		}
 		_exit(0);
 		for(int i =0;i<5;i++)
@@ -71,7 +71,7 @@ int main()
 		}
 		waitpid(ret1,&S1,0);
 		printf("child exit status id %d",WEXITSTATUS(S1));
-		
+
 	}
 	_exit(0);
 
